@@ -294,7 +294,8 @@ text-transform: capitalize;
   border-radius: 50%;
 transform: rotate(330deg);
 transition: 0.75s ease-in-out;
-  position: relative; /* Required for the pseudo-element positioning */
+  position: relative;
+  transition: 0.5s ease-in-out;
 }
 
 .red:hover .roundedarrow{
@@ -310,8 +311,16 @@ transition: 0.75s ease-in-out;
   height: calc(100% + 14px);
   border: 2px solid var(--primary-accent); 
   border-radius: 50%; 
-  box-sizing: border-box; 
+  box-sizing: border-box;
+  box-shadow: 0px 0px 25px 3px var(--primary-accent);
+  transition: 0.5s ease-in-out;
 }
+
+.red:hover .roundedarrow::after {
+
+  box-shadow: 0px 0px 35px 3px var(--primary-accent);
+}
+
 
 .herotitle small{
   font-family: Roboto Flex;
@@ -503,7 +512,8 @@ color: var(--text-dark);
   height: calc(100% + 14px);
   border: 2px solid #262626; 
   border-radius: 50%; 
-  box-sizing: border-box; 
+  box-sizing: border-box;
+  box-shadow: 0px 0px 2px 1px var(--primary-accent);
 }
 
 .centered{

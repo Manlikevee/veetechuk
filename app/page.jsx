@@ -110,11 +110,20 @@ const page = () => {
 
   return (
     <Portfolio_layout>
-  <Hero/>
-  <CustomMarquee items={sampleData} direction={'right'} />
-  <Why/>
+
+      <div className="contentcontainer">
+      <Hero/>
+      <CustomMarquee items={sampleData} direction={'right'} />
+      </div>
+     
+      <div className="contentcontainer">
+      <Why/>
+      </div>
+<div className="contentcontainer">
+<OurServices/>
+</div>
   <br />
-  <OurServices/>
+
     </Portfolio_layout>
   )
 }
