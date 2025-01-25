@@ -71,6 +71,8 @@ main{
   gap: 15px;
 }
 
+
+
 header{
   background-color: var(--primary-base);
   width: 100%;
@@ -106,7 +108,7 @@ object-fit: contain;
 
 header .navlinks{
   display: flex;
-  gap: 10px;
+  gap: 13px;
 
 
 }
@@ -200,6 +202,7 @@ flex-direction: column;
   background-image: url('https://s3-alpha-sig.figma.com/img/c57b/54f5/5fbe8960b068c9e8fa57b30d5e33cc91?Expires=1738540800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=iZHu8~XRLKIYCD8cdoe7nY8ch4CUhzeNc7BwXZBdYYmTPi7DMbkz0vAVbzPDUVPfrjDpPvflsmNTbEui7rbcFPW0rrdduvqTbYJS3Nal-CjRKz~cU3911Q2SJp8HLQ36DvPq0hWNf~UbVDCr9Iu23qGjayCDFqnOdYMi6qjw3UGd4Q0EHBWdJ0Bog3h6AFPKXlr4qEtTwyubcvxVvWxdQJyumuiaCaw0Fl5H2YRVGrs1fud~NfFHc~jnOJPogalnj~iiTtukWFjQp1oAGmbdjySxgPi8uhKRbseEvVsmohFsZPh3jhDV~DLbscGgtYYYkrpb5zf2REyO6jo3ZKdOpw__');
   background-size: cover;
   background-size: cover;
+  overflow: hidden;
 }
 
 
@@ -214,9 +217,9 @@ flex-direction: column;
 
 .herotitle{
   font-family: var(--font-roboto-flex);
-font-size: 62px;
+font-size: 57px;
 font-weight: 600;
-line-height: 87px;
+line-height: 77px;
 text-align: left;
 color: var(--text-light);
 text-transform: uppercase;
@@ -225,8 +228,36 @@ align-items: center;
 gap: 10px;
 flex-wrap: nowrap;
 white-space: nowrap;
+transition: 0.5s ease-in-out;
 }
 
+
+
+.cornercircle{
+    /* position: absolute; */
+    background-color: #0F0F0F;
+    padding: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    border-radius: 50%;
+    width: 135px;
+    height: 135px;
+    margin-left: auto;
+    margin-left: 70%;
+    margin-top: -5%;
+
+}
+
+.cornercircle .red span{
+  font-size: 45px;
+}
+
+.wrap{
+  flex-wrap: wrap;
+  white-space: wrap;
+}
 .accenttext{
   font-family: var(--font-roboto-flex);
 font-size: 14px;
@@ -235,8 +266,14 @@ line-height: 25px;
 text-align: left;
 color: var(--text-dark);
 padding-top: 9px;
-width: 98%;
+width: 100%;
+text-transform: capitalize;
 }
+
+.darkbg{
+  background-color: var(--primary-base);
+}
+
 .red{
   align-self: center;
   align-items: center;
@@ -335,6 +372,15 @@ color: #DA9E8B;
   gap: 8px;
 }
 
+.mygrid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-auto-rows: 1fr;
+  padding-top: 2px;
+  grid-gap: 12px;
+
+}
+
 .heroflexbtm .content .contentbox{
 
   padding: 12px;
@@ -364,4 +410,114 @@ font-weight: 400;
 line-height: 27px;
 text-align: left;
 color: #B3B3B2;
+}
+
+.bigsectiontitle{
+  font-family: var(--font-roboto-flex);
+font-size: 26px;
+font-weight: 500;
+line-height: 30.25px;
+text-align: left;
+text-transform: uppercase;
+text-decoration-skip-ink: none;
+color: var(--text-light);
+}
+
+.heroflexbtm{
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.whybox{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+  background-color: var(--primary-base);
+  border-radius: 9px;
+  border: 1px solid var(--border-color);
+}
+
+.whytitle{
+  text-transform: uppercase;
+  font-family: Roboto Flex;
+font-size: 16px;
+font-weight: 500;
+line-height: 25px;
+text-align: left;
+text-transform: uppercase;
+text-decoration-skip-ink: none;
+color: var(--text-light);
+text-decoration-skip-ink: none;
+
+}
+
+.whydesc{
+  color: #B3B3B2;
+  font-family: Roboto Flex;
+font-size: 14px;
+font-weight: 400;
+line-height: 24px;
+text-align: left;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+
+}
+
+.blk{
+  margin: 0;
+  padding: 0;
+  align-self: flex-start;
+  padding-top: 10px;
+  margin-top: auto;
+  display: flex;
+  gap: 10px;
+ 
+}
+
+.blk small{
+  margin-left: 5px;
+  font-family: Roboto Flex;
+font-size: 14px;
+font-weight: 400;
+line-height: 27px;
+text-align: left;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+color: var(--text-dark);
+}
+
+.blk span{
+  background-color: #262626;
+  color: #E7BEB1;
+}
+
+
+.blk span::after {
+  content: '';
+  position: absolute;
+  top: -7px; 
+  left: -7px;
+  width: calc(100% + 14px); 
+  height: calc(100% + 14px);
+  border: 2px solid #262626; 
+  border-radius: 50%; 
+  box-sizing: border-box; 
+}
+
+.centered{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.centered .blk{
+  margin: auto;
+
+}
+
+.centered .blk small{
+text-transform: uppercase;
+color: #B3B3B2;  
 }

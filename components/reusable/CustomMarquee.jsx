@@ -1,6 +1,6 @@
 import React from 'react';
 
-const CustomMarquee = ({ items }) => {
+const CustomMarquee = ({ items, direction }) => {
   return (
     <div
       style={{
@@ -15,7 +15,7 @@ const CustomMarquee = ({ items }) => {
     >
       <marquee
         behavior="scroll"
-        direction="left"
+        direction={direction? direction : 'left'}
         scrollamount="5"
         style={{
           width: '100%',

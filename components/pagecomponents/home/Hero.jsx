@@ -1,4 +1,5 @@
 import CustomMarquee from '@/components/reusable/CustomMarquee';
+import TextTransitionExample from '@/components/reusable/TextTransitionExample';
 import React from 'react';
 
 const Hero = () => {
@@ -28,7 +29,7 @@ const Hero = () => {
                   <small>Start a Project</small>
                 </div>
               </div>
-              <div className="herotitle">That Drive Success</div>
+              <div className="herotitle wrap">That Drive's <TextTransitionExample/></div>
 
               <div className="accenttext">
                 At VeeTechNG, we harness the power of cutting-edge technology to
@@ -48,7 +49,14 @@ const Hero = () => {
             <div className="projectbox">
               
             <div className="projectimg">
-       
+              <div className="cornercircle">
+              <div className="red">
+                  <span className="roundedarrow material-symbols-outlined">
+                    arrow_forward
+                  </span> 
+                </div>
+              </div>
+            
     </div>
     <div className="projectdesc">
         <div className="bgcontainer">
@@ -88,13 +96,14 @@ const Hero = () => {
     <div className="contenttitle">Years Of Experience</div>
     <div className="contentbody">10+</div>
   </div>
-  <div className="contentbox">
-    <div className="contenttitle">Know More</div>
-    <div className="contentbody">
-      <small href="#" style={{ textDecoration: 'underline', color: 'inherit' }}>
-      10+
-      </small>
-    </div>
+  <div className="contentbox centered">
+
+    <div className="red blk">
+                  <span className="roundedarrow material-symbols-outlined">
+                    arrow_forward
+                  </span>{' '}
+                  <small>Know More</small>
+                </div>
   </div>
 </div>
 
