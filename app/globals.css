@@ -175,7 +175,7 @@ border: 2px solid var(--border-color);
   padding: 25px;
 }
 .nopadding{
-  padding: 0;
+  padding: 0 !important;
 }
 
 .fullheight{
@@ -343,8 +343,24 @@ margin-top: 10px;
 margin-bottom: 5px;
 }
 
+.ourworks{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.ourworksblock{
+  display: flex;
+  gap: 10px;
+
+}
+
+
+.servicelabelcontent{
+color: #E6E6E6;
+}
+
 .heroflexbtm{
-  padding: 8px;
+  padding: 10px;
   border: 2px solid var(--border-color);
   border-radius: 7px;
 }
@@ -389,7 +405,93 @@ color: #DA9E8B;
   grid-gap: 12px;
 
 }
+.serviceleft{
+  width: 100%;
+display: flex;
+gap: 9px;
+height: fit-content;
+align-items: center;
+}
 
+.serviceright{
+  width: fit-content;
+  min-width: max-content;
+ display: flex;
+ align-items: center;
+ gap: 10px;
+  margin-left: auto;
+}
+
+.serviceright span{
+  font-size: 20px;
+  transform: rotate(320deg);
+  background-color: #1f1f1f;
+  padding: 5px;
+  border-radius: 50%;
+  color: #E7BEB1;
+  border: 2px solid #333333;
+}
+.servicelogo{
+  width: fit-content;
+  display: flex;
+  font-size: 20px;
+  height: fit-content;
+  background-color: #1f1f1f;
+  padding: 8px;
+  border-radius: 10%;
+  color: #E7BEB1;
+  border: 2px solid #333333;
+  align-items: center;
+}
+.servicelogo img{
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+.servicesheader{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+.servicepricing{
+  text-align: right;
+  text-transform: uppercase;
+  font-family: Roboto Flex;
+font-size: 17px;
+font-weight: 500;
+line-height: 25px;
+text-align: right;
+color: #F9EFEC;
+padding-bottom: 10px;
+padding-top: 10px;
+}
+
+
+.mysmallgrid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(480px, 1fr));
+  grid-auto-rows: 1fr;
+  padding-top: 2px;
+  grid-gap: 12px;
+}
+
+.serviceright{
+  font-family: Roboto Mono;
+font-size: 13px;
+font-weight: 500;
+line-height: 20px;
+text-align: left;
+color: #B3B3B2;
+text-transform: uppercase;
+}
+
+.serviceright span{
+
+}
 .heroflexbtm .content .contentbox{
 
   padding: 12px;
@@ -451,7 +553,7 @@ color: var(--text-light);
 .whytitle{
   text-transform: uppercase;
   font-family: Roboto Flex;
-font-size: 16px;
+font-size: 17px;
 font-weight: 500;
 line-height: 25px;
 text-align: left;
@@ -465,9 +567,9 @@ text-decoration-skip-ink: none;
 .whydesc{
   color: #B3B3B2;
   font-family: Roboto Flex;
-font-size: 14px;
+font-size: 13.5px;
 font-weight: 400;
-line-height: 24px;
+line-height: 22.5px;
 text-align: left;
 text-underline-position: from-font;
 text-decoration-skip-ink: none;
@@ -531,3 +633,41 @@ color: var(--text-dark);
 text-transform: uppercase;
 color: #B3B3B2;  
 }
+.p30{
+  padding: 30px;
+}
+
+.servicecategory{
+ 
+    padding: 7px;
+    border-radius: 46px;
+    background-color: #1f1f1f;
+    width: fit-content;
+    font-size: 13px;
+    padding-inline: 13px;
+    align-items: center;
+    display: flex;
+    gap: 10px;
+  }
+
+  .myprojectimg{
+    width: 100%;
+overflow: hidden;
+cursor: pointer;
+position: relative;
+filter: brightness(0.6);
+transition: 0.5s;
+  }
+
+  .myprojectimg:hover{
+    cursor: pointer;
+      filter: brightness(1);
+      transition: 0.5s;
+  }
+  
+  .myprojectimg img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  

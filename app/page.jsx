@@ -1,6 +1,7 @@
 import Portfolio_layout from '@/components/mylayout/Portfolio_layout'
 import Hero from '@/components/pagecomponents/home/Hero'
 import OurServices from '@/components/pagecomponents/home/OurServices'
+import OurWorks from '@/components/pagecomponents/home/OurWorks'
 import Why from '@/components/pagecomponents/home/Why'
 import CustomMarquee from '@/components/reusable/CustomMarquee'
 import React from 'react'
@@ -119,11 +120,17 @@ const page = () => {
       <div className="contentcontainer">
       <Why/>
       </div>
+
+      <br />
+      <br />
 <div className="contentcontainer">
 <OurServices/>
 </div>
   <br />
-
+  <br />
+<div className="contentcontainer">
+<OurWorks/>
+</div>
     </Portfolio_layout>
   )
 }

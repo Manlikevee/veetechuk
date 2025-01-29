@@ -2,7 +2,7 @@ import React from 'react'
 
 const Whybox = ({title, body}) => {
   return (
-    <div className='whybox p20'>
+    <div className='whybox p30'>
         <div className="whytitle">{title}</div>
         <div className="whydesc">{body}</div>
         <div className="red blk">
