@@ -1,12 +1,15 @@
 import Portfolio_layout from '@/components/mylayout/Portfolio_layout'
+import Faq from '@/components/pagecomponents/home/Faq'
 import Hero from '@/components/pagecomponents/home/Hero'
 import OurServices from '@/components/pagecomponents/home/OurServices'
 import OurWorks from '@/components/pagecomponents/home/OurWorks'
+import Testimonial from '@/components/pagecomponents/home/Testimonial'
 import Why from '@/components/pagecomponents/home/Why'
 import CustomMarquee from '@/components/reusable/CustomMarquee'
 import React from 'react'
 
 const page = () => {
+
   const sampleData = [
     'E-commerce',
     'Blog Application',
@@ -110,7 +113,7 @@ const page = () => {
   ];
 
   return (
-    <Portfolio_layout>
+  <Portfolio_layout>
 
       <div className="contentcontainer">
       <Hero/>
@@ -131,7 +134,18 @@ const page = () => {
 <div className="contentcontainer">
 <OurWorks/>
 </div>
-    </Portfolio_layout>
+  <br />
+  <br />
+<div className="contentcontainer">
+<Testimonial/>
+</div>
+  <br />
+  <br />
+<div className="contentcontainer">
+<Faq/>
+</div>
+
+</Portfolio_layout>
   )
 }
 

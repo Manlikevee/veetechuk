@@ -45,7 +45,7 @@ const CustomMarquee = ({ items, direction }) => {
             {/* Text content */}
             <span
               style={{
-                fontFamily: 'Roboto Mono',
+                fontFamily: 'var(--font-roboto-mono)',
                 fontSize: '17px',
                 fontWeight: '400',
                 lineHeight: '22px',

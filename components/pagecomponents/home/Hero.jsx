@@ -2,7 +2,7 @@ import CustomMarquee from '@/components/reusable/CustomMarquee';
 import TextTransitionExample from '@/components/reusable/TextTransitionExample';
 import React from 'react';
 
-const Hero = () => {
+const Hero = ({ image }) => {
   const sampleData = [
     'Digital Marketing',
     'Website Design',
@@ -14,6 +14,9 @@ const Hero = () => {
     'App Development',
   ];
 
+  const fallbackImage = "/Image.svg";
+
+  const backgroundImage = image || fallbackImage;
   return (
     <div className="contentcontainer">
       <div className="heroflex">
@@ -48,7 +51,15 @@ const Hero = () => {
           <div className="bgcontainer w-50 nopadding fullheight">
             <div className="projectbox">
               
-            <div className="projectimg">
+           <div
+      className="projectimg"
+      style={{
+        backgroundImage: `url(${backgroundImage})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
+      }}
+    >
               <div className="cornercircle">
               <div className="red">
                   <span className="roundedarrow material-symbols-outlined">
