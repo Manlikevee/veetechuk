@@ -1026,7 +1026,7 @@ header .navlinks{
 }
 
 .p30{
-    padding: 15px;
+    padding: 18px;
 }
 
 main{ 
@@ -1040,5 +1040,32 @@ main{
 
 .herodata .red{
  display: none;
-}   
+} 
+
+.techstack{
+  height: fit-content;
+}
+
+header{
+  top: 1px;
+}
+
+.whytitle{
+  font-size: 15px;
+  line-height: 27px;
+}
+
+.faq-header h3{
+  text-align: left  ;
+}
+
+.contact-form{
+  padding: 5px;
+}
+
+.szh-accordion__item {
+
+    padding: 20px;
+
+}
 }
