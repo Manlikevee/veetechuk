@@ -7,6 +7,7 @@ const Header = () => {
         {/* <img src="logo.svg" alt="" /> */}
         <h3 className='headertitle'>VEETECH-NG</h3>
         <div className="navlinks">
+
     <div className="navlink">Home</div>
     <div className="navlink">Services</div>
     <div className="navlink">Projects</div>
@@ -16,6 +17,10 @@ const Header = () => {
     <div className="navlink contactbtn">Contact Us</div>
 </div>
       
+      <div className="navtoggle">
+        <div className="navtoggle-icon"></div>
+      </div>
+
     </div>
    </header>
   )

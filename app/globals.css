@@ -992,7 +992,7 @@ header .navlinks{
     align-items: center;
     gap: 10px;
     font-size: 37px;
-    font-weight: 600;
+    font-weight: 700;
     line-height: 47px;
     transition: all .5s ease-in-out;
     display: flex;
@@ -1068,4 +1068,18 @@ header{
     padding: 20px;
 
 }
+.bigsectiontitle {
+    font-size: 20px;
+
+    line-height: 33.25px;
+}
+
+}
+
+@media (max-width: 668px) {
+  .heroflexbtm .content > *:nth-last-child(-n+2) {
+    grid-column: 1 / -1; /* 👈 span full width */
+  }
+
+
 }
